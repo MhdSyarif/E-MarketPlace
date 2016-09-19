@@ -3,14 +3,18 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use DB;
 use Auth;
+=======
+>>>>>>> 893353eb97fb80c9bd094c2c3250531fde66a3a2
 
 class Product extends Model
 {
     protected $primaryKey = "id_product";
     
     protected $table = "mst_product";
+<<<<<<< HEAD
 
     public function __construct(Main $mainModel)
     {
@@ -50,4 +54,6 @@ class Product extends Model
 		//Simpan ke Tabel Audit
 		$this->mainModel->setAudit($id,"Merubah Produk",json_encode($data),Auth::user()->id);
     }
+=======
+>>>>>>> 893353eb97fb80c9bd094c2c3250531fde66a3a2
 }
